@@ -6,11 +6,11 @@ A Governor script is the source code of a program running in the script engine. 
 
 = Byte code =
 
-The byte code for governor is actually a static AS3 class containing an array with the compiled governor script. This class gets imported to the user's project. 
+The byte code for governor is actually a static AS3 class containing an array with the compiled governor scripts. This class gets imported to the user's project. 
 
 = Governor script =
 
-The .gsc file can contain more than one program. The begining of a program is indecated with a = followed by the program name. As explained in the previous section the source is compiled into an array. The program name is used for the index. So there are some rules:
+The .gsc file can contain more than one program. The begining of a program is indecated with a *=* followed by the program name. As explained in the previous section the source is compiled into an array. The program name is used for the index. So there are some rules:
  * the name has to be unique.
  * don't start the name with numbers.
  * prevent white spaces. (leading and tailing white spaces are trimmed.)
@@ -33,7 +33,7 @@ The governor script engine is a stack engine. Stack engines are operating in a c
   add
 }}}
 
-In this example we use the command add to add the numbers 1 and 2. We have to know that add takes two parameters (most of the commands take two parameters). So before we call *add* we have to *push* the numbers 1 and 2 on the stack.
+In this example we use the command *add* to add the numbers 1 and 2. We have to know that add takes two parameters (most of the commands take two parameters). So before we call *add* we have to *push* the numbers 1 and 2 on the stack.
 
 = Details =
 

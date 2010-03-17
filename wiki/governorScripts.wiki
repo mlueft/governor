@@ -34,10 +34,3 @@ The governor script engine is a stack engine. Stack engines are operating in a c
 }}}
 
 In this example we use the command *add* to add the numbers 1 and 2. We have to know that add takes two parameters (most of the commands take two parameters). So before we call *add* we have to *push* the numbers 1 and 2 on the stack. Normally the command removes its parameters from the stack. So after calling *add* there is just 3 on the stack and not 1, 2 and 3.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages

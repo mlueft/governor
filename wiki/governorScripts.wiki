@@ -24,7 +24,7 @@ This is how a script can look like:
   // do something here
 }}}
 
-The governor script engine is a stack engine. Stack engines are operating in a certain way: *Each command takes it parameters from the stack and puts the result back on it.* That means each parameter you want to give to a command you have to put on the stack. To put a value on the stack use the command *push* followed by the value.
+The governor script engine is a stack engine. Stack engines are operating in a certain way: *Each command takes it parameters from the stack and puts the result back on it.* That means you have to put each parameter you want to give to a command on the stack. To put a value on the stack use the command *push* followed by the value.
 
 {{{
 =script1

@@ -2,8 +2,38 @@ This page explains what governor scripts are and how they work.
 
 = Introduction =
 
-Governor scripts are ...
+A Governor script is the source code of a program running in the script engine. As in other programming languages it is written in a text file( For governor with the extension .gsc which stands for governor scripts). With a compiler the .gsc file gets compiled to byte code. The byte code is executed by the script engine.
 
+= Byte code =
+
+The byte code for governor is actually a static AS3 class containing an array with the compiled governor script. This class gets imported to the user's project. 
+
+= Governor script =
+
+The .gsc file can contain more than one program. The begining of a program is indecated with a = followed by the program name. As explained in the previous section the source is compiled into an array. The program name is used for the index. So there are some rules:
+ * the name has to be unique.
+ * don't start the name with numbers.
+ * prevent white spaces. (leading and tailing white spaces are trimmed.)
+ * don't use special characters.
+
+This is how a script can look like:
+{{{
+=script1
+  // do something here
+=script2
+  // do something here
+}}}
+
+The governor script engine is a stack engine. Stack engines are operating in a certain way: *Each command takes it parameters from the stack and puts the result back on it.* That means each parameter you want to give to a command you have to put on the stack. To put a value on the stack use the command *push* followed by the value.
+
+{{{
+=script1
+  push 1
+  push 2
+  add
+}}}
+
+In this example we use the command add to add the numbers 1 and 2. We have to know that add takes two parameters (most of the commands take two parameters). So before we call *add* we have to *push* the numbers 1 and 2 on the stack.
 
 = Details =
 

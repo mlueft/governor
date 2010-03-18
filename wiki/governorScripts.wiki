@@ -56,6 +56,10 @@ Here are some other example scripts:
   pow      // 4^2 = 16 - 16 is on the stack
 }}}
 
+= program flow =
+
+...
+
 = multithreading =
 
 Governor provides multithreading functionalities. Every time you start a program, the script engine creates a new process to run it. A process is a container object for program threads which are executing the code. A process can have more than one thread running parallely and the engine can have more than one process at the same time. A second thread is started by splitting a program with the command *fork*. Fork clones the thread with all properties, program code, memory, position in code, ... After forking a thread the original thread is thread is called the parent thread and the clone is called child thread. With the command *ipt* (isParentThread) you can you can separate the parent from the client to execute different command in each thread. Because you have to do this every time you fork a program, fork executes this command automatically for you.
@@ -87,3 +91,4 @@ end:
 = Memory access =
 
 Governor has got a memory module to store values. There are two kind of memories. One memory that is local to the thread and a second memory that is local to the process. 
+...

@@ -2,7 +2,7 @@ This page explains what governor scripts are and how they work.
 
 = Introduction =
 
-A Governor script is the source code of a program running in the script engine. As in other programming languages it is written in a text file( For governor with the extension .gsc which stands for governor scripts). With a compiler the .gsc file gets compiled to byte code. The byte code is executed by the script engine.
+A Governor script is the source code of a program running in the script engine. As in other programming languages it is written in a text file( For governor with the extension .gsc which stands for governor scripts). With a compiler the .gsc file gets compiled to byte code. The byte code is executed by the script engine. Check
 
 = Byte code =
 

@@ -1,4 +1,4 @@
-#This page shows how you can use governor in your own project.
+This page shows how you can use governor in your own project.
 
 This is written quick'n dirty because :-) peter has joined the project :-) and he wants to use it.
 

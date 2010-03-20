@@ -6,7 +6,7 @@ This is written quick'n dirty because :-) peter has joined the project :-) and h
 
 To use governor you need to do these steps:
  # Instantiating the Scheduler in you core class.
- # Write you own OpFunctions to your API.
+ # Write you own OpFunctions (Builds your own API).
  # determinging the points in the code where programs should be started.
  # call the Scheduler's main function in your main function.
 

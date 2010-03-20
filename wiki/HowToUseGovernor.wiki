@@ -55,7 +55,7 @@ In the init function of LogicCreature I register all opFunctions with the corres
 
 This is the same in LogicDoors and LogicSwitches.
 
-In the class LogicCore I save a reference to the byteCode(static AS3 class with an array containing the compiled dovernor scripts)
+In the class LogicCore I save a reference to the byteCode(static AS3 class with an array containing the compiled governor scripts)
 
 Somewhere
 

@@ -51,7 +51,7 @@ This class inherites from LogicCore and adds the functionality for creatures and
  }
 }}}
 
-In the init function of LogicCreature I register all opFunctions with the corresponding byteCode to the Scheduler. Now the Scheduler knows what function to call if it finds the byteCode for getCreatureX in the program code.
+In the init function of LogicCreature I register all opFunctions with the corresponding byteCode to the Thread class. Now the Scheduler knows what function to call if it finds the byteCode for getCreatureX in the program code.
 
 This is the same in LogicDoors and LogicSwitches.
 

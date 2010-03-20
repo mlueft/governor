@@ -1,8 +1,38 @@
-#summary One-sentence summary of this page.
+#This page shows how you can use governor in your own project.
 
-= Introduction =
+This is written quick'n dirty because :-) peter has joined the project :-) and he wants to use it.
 
-Add your content here.
+= Overview =
+
+To use governor you need to do these steps:
+# Instantiating the Scheduler in you core class.
+# Write you own OpFunctions to your API.
+# determinging the points in the code where programs should be started.
+# call the Scheduler's main function in your main function.
+
+I'll explain the usage with an example. In my game cannonrun the player can trigger hundreds of switches. Some of them are opening/closing doors, others are triggering scripted sequences. 
+
+This is the design of my engine:
+
+LogicCore->LogicCreature->LogicDoors->LogicSwitches->LogicCannonrun
+
+*LogicCore*
+The class LogicCore provides some basic functions that are needed in all inherited classes. Here I instantiate the Scheduler from the governor namespace.
+
+*LogicCreature*
+This class inherites from LogicCore and adds the functionality for creatures and the player. It holds all creatures in a hash. In this class I implement all OpFunctions for creature interaction(for example placeCreatur, getCreatureX, getCreatureY, setCreatureEnergy).
+
+In the init function of LogicCreature I register all opFunctions with the corresponding byteCode to the Scheduler. Now the Scheduler knows what function to call if it finds the byteCode for getCreatureX in the program code.
+
+This is the same in LogicDoors and LogicSwitches.
+
+
+
+Well, in the level definition I define the switch and as a property of it the name("switch1Trigger") of the script which should be executed when the switch is triggered.
+
+
+
+
 
 
 = Details =

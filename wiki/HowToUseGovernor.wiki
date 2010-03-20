@@ -55,13 +55,16 @@ In the init function of LogicCreature I register all opFunctions with the corres
 
 This is the same in LogicDoors and LogicSwitches.
 
-In the class LogicCore I save a reference to the byteCode(static AS3 class with an array containing the compiled governor scripts)
+In the class LogicCore I save a reference to the byteCode(static AS3 class with an array containing the compiled governor scripts). Somewhere in the class LogicDoors there is a function that is called when the player triggers a switch in the game. This is the point where where a program is started in our scripEngine.
 
-Somewhere
+{{{
+   ...
+   private function switchTriggered(e:SwitchEvent):void{
 
-Well, in the level definition I define the switch and as a property of it the name("switch1Trigger") of the script which should be executed when the switch is triggered.
+      this.scriptEngine.start( this.refScripts[e.target.scriptName]);
 
-
+   }
+}}}
 
 
 

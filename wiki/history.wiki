@@ -1,0 +1,22 @@
+History of Governor.
+
+= History =
+
+2010:
+ * Project was renamed from swfscript to governor and open source in march.
+ * Source code was completely reviewed, documented and cleaned in February.
+
+2009:
+ * AS2 version was ported to AS3.
+
+2008:
+ * Multithreading was added.
+
+2007:
+ * Functions were added as needed.
+ * design was improved.
+
+2006:
+ * First version was implemented.
+ * Tempate engine wasn't satisfying in autmn 2006. First idea of a real script engine was born.
+ * First tempate engine was written in AS2 in summer 2006.

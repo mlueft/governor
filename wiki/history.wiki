@@ -21,4 +21,4 @@ History of Governor.
 2006:
  * First version was implemented.
  * Template engine wasn't satisfying in autmn 2006. First idea of a real script engine was born.
- * First tempate engine was written in AS2 in summer 2006.
+ * First template engine was written in AS2 in summer 2006.

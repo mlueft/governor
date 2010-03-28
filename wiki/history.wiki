@@ -5,6 +5,8 @@ History of Governor.
 2010:
  * Project was renamed from swfscript to governor and open source in march.
  * Source code was completely reviewed, documented and cleaned in February.
+ * Governor was design and currently is a zero address machines. But latest optimizations changed the design of the thread's main loop which allows the usage of multi operation mnemonics. But this feature is not used at the moment.
+ * While doing the latest optimizations I had the idea to introduce something like registers. I am trying this feature in a prototype and it looks like that it brings better performance.
 
 2009:
  * AS2 version was ported to AS3.

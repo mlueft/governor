@@ -2,6 +2,13 @@ History of Governor.
 
 = History =
 
+
+2010.03.29
+ * Some examples added:
+   * example1 shows the usage ina FlashDevelop project.
+   * example2 shows the usage in a flash(IDE) project.
+   * example3 shows the usage in a Flash Builder project.
+
 2010:
  * Project was renamed from swfscript to governor and open source in march.
  * Source code was completely reviewed, documented and cleaned in February.

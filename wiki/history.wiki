@@ -5,7 +5,7 @@ History of Governor.
 
 2010.03.29
  * Some examples added to source code:
-   * example1 shows the usage ina FlashDevelop project.
+   * example1 shows the usage in a FlashDevelop project.
    * example2 shows the usage in a flash(IDE) project.
    * example3 shows the usage in a Flash Builder project.
 

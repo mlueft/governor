@@ -1,5 +1,4 @@
 #summary This is the entry page for the wiki.
-#sidebar TableOfContents
 
 = Welcome =
 

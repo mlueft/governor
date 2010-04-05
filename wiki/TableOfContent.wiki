@@ -1,6 +1,6 @@
 #summary Sidebar for the wiki.
   * [index Home]
-  * [Governor script]
+  * [governorScripts Governor script]
     * [governorScripts How to write .gvs files]
     * [referenceIndex reference]
   * [HowToUseGovernor How to use governor]

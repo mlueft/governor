@@ -1,4 +1,4 @@
-History of Governor.
+#summary History of Governor.
 
 = History =
 

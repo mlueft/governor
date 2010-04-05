@@ -91,19 +91,11 @@ This page shows the function reference for governor script.
 == gto ==
 
 
-// register A functions. Registers are experimentell!
-sta
-lda
-inca
-deca
-adda
-suba
-
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Registers =
+Register functions. Registers are experimentell!
+== sta ==
+== lda ==
+== inca ==
+== deca ==
+== adda ==
+== suba ==

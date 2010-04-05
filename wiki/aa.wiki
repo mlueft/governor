@@ -1,8 +1,0 @@
-#summary This is the entry page for the wiki.
-
-= Welcome =
-
-Welcome to governor wiki page.
-
-
-What is Governor

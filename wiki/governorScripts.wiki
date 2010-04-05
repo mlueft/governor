@@ -1,4 +1,4 @@
-This page explains what governor scripts are and how they work.
+#summary This page explains what governor scripts are and how they work.
 
 = Introduction =
 

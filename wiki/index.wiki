@@ -2,7 +2,9 @@
 
 = Welcome =
 
-Welcome to governor wiki page.
+Welcome to governor wiki page. 
 
 
-What is Governor
+= What is Governor =
+
+= Why should you use Governor? =

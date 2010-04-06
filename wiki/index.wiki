@@ -7,6 +7,6 @@ Welcome to governor wiki page.
 
 = What is Governor =
 
-Governor is a script engine completely written in AS3. The aim of Governor is to give flash developer a flexible tool to solve problems that can't be handled by other solutions like template engines anymore.
+Governor is a script engine completely written in AS3. The aim of Governor is to give flash developer a flexible tool to solve problems that can't be handled by other solutions like template engines.
 
 = Why should you use Governor? =

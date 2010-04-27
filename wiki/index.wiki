@@ -1,5 +1,3 @@
-#summary This is the entry page for the wiki.
-
 = Welcome =
 
 Welcome to governor's wiki page. 

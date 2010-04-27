@@ -67,4 +67,32 @@ FlashDevlop supports pre-Build commands. This are commands called automatically 
   # Copy the following text in the upper text area. {{{$(ProjectDir)/compileGovernor.bat}}}
   # Click OK to save the changes and close the window.
 
-Now FlashDevelop tries to call a batch file named "compileGovernor.bat" in the projects root directory everytime you test/export your project. 
+Now FlashDevelop tries to call a batch file named "compileGovernor.bat" in the projects root directory everytime you test/export your project. We have to create this file now. 
+
+  1. Create a new file in the root directory of your project and name it "compileGovernor.bat".
+  2. Open this file in a text editor and copy the following content to it.
+{{{
+
+rem define the path to the installation folder of governorc here.
+set pathGovernor=D:\programme\governorc\
+
+rem define the path to the project's root directory here.
+rem The project's root directory is the directory where the .as3proj file stored.
+set pathProject=D:\programming\AS3\03_tools\governor\trunk\examples\example1\
+
+rem Subfolder where your .gvs file is stored.
+set pathGVS=src\gvs\
+
+rem Name of the .gvs file.
+set fileGVS=scripts.gvs
+
+rem Name of the customToken file.
+set fileCT=customToken.txt
+
+%pathGovernor%governorc.exe -if %pathProject%%pathGVS%%fileGVS% -of %pathProject%%pathGVS% -ct %pathProject%%fileCT% -ns gvs -v AS3 -on Governor
+
+}}}
+  3. Correct paths and file names as you need them.
+  4. save the file and close it.
+
+That's it.

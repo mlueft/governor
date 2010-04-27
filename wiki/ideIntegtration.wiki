@@ -55,5 +55,4 @@ The last lines of the file should now look like this:
 
 Save the file and close it.
 
-
-=== Compile button ===
+If FlashDevelop was open while installing the syntax, you have to restart it now.

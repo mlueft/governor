@@ -64,7 +64,7 @@ FlashDevlop supports pre-Build commands. This are commands called automatically 
   # Open the FlashDevlop project where you want to add the pre-Build command.
   # open the project properties (Project>>Properties ...).
   # change to the Build tab.
-  # Copy the following text in the upper text area. {{{$(ProjectDir)/compileGovernor.bat}}}
+  # Copy the following text in the upper text area. {{{$(ProjectDir)/compileGovernor.bat $(ProjectDir)\}}}
   # Click OK to save the changes and close the window.
 
 Now FlashDevelop tries to call a batch file named "compileGovernor.bat" in the projects root directory everytime you test/export your project. We have to create this file now. 
@@ -76,10 +76,6 @@ Now FlashDevelop tries to call a batch file named "compileGovernor.bat" in the p
 rem define the path to the installation folder of governorc here.
 set pathGovernor=D:\programme\governorc\
 
-rem define the path to the project's root directory here.
-rem The project's root directory is the directory where the .as3proj file stored.
-set pathProject=D:\programming\AS3\03_tools\governor\trunk\examples\example1\
-
 rem Subfolder where your .gvs file is stored.
 set pathGVS=src\gvs\
 
@@ -89,11 +85,14 @@ set fileGVS=scripts.gvs
 rem Name of the customToken file.
 set fileCT=customToken.txt
 
+
+set pathProject=%1%
 %pathGovernor%governorc.exe -if %pathProject%%pathGVS%%fileGVS% -of %pathProject%%pathGVS% -ct %pathProject%%fileCT% -ns gvs -v AS3 -on Governor
 
 }}}
   # Correct paths and file names as you need them.
   # save the file and close it.
+  # Create a new file in the project's root folder and name it "customToken.txt"
 
 That's it.
 

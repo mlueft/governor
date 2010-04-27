@@ -7,13 +7,13 @@
 To enable Syntax highlighting in Flashdevelop we need to edit two files.
 
   * C:\`[APPLICATION FOLDER]`\FlashDevelop\Settings\ScintillaNET.xml
-  * C:\`[APPLICATION FOLDER]`\FlashDevelop\Settings}MainMenu.xml
+  * C:\`[APPLICATION FOLDER]`\FlashDevelop\Settings\MainMenu.xml
 
-Download the file SYNTAX_FLASHDEVELOP.XML and save it in the folder:
+First download the file SYNTAX_FLASHDEVELOP.XML from the project page and save it in the folder:
 
-C:\Dokumente und Einstellungen\[USER]\Lokale Einstellungen\Anwendungsdaten\FlashDevelop\Settings\Languages\
+C:\Dokumente und Einstellungen\`[USER FOLDER]`\Lokale Einstellungen\Anwendungsdaten\FlashDevelop\Settings\Languages\
 
-Rename the file to GSC.xml.
+Nor rename it to GSC.xml.
 
 
 *MainMenu.xml*

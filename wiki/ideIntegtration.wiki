@@ -1,0 +1,58 @@
+= IDE integration =
+
+== FlashDevlop ==
+
+=== Syntax highlight ===
+
+To enable Syntax highlighting in Flashdevelop we need to edit two files.
+
+C:\Dokumente und Einstellungen\[USER]\Lokale Einstellungen\Anwendungsdaten\FlashDevelop\Settings\Languages\GSC.xml
+C:\[APPLICATION FOLDER]\FlashDevelop\Settings\ScintillaNET.xml
+C:\[APPLICATION FOLDER]\FlashDevelop\Settings}MainMenu.xml
+
+Download the file SYNTAX_FLASHDEVELOP.XML and save it in the folder:
+
+C:\Dokumente und Einstellungen\[USER]\Lokale Einstellungen\Anwendungsdaten\FlashDevelop\Settings\Languages\
+
+Rename the file to GSC.xml.
+
+
+*MainMenu.xml*
+
+Add this line directly under the line {{{<menu label="Label.Syntax" name="SyntaxMenu">}}}
+
+{{{
+<button label="&amp;gsc" click="ChangeSyntax" tag="gsc" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
+}}}
+
+The file should now look like this:
+
+{{{
+...
+	<menu label="Label.Syntax" name="SyntaxMenu">
+		<button label="&amp;gsc" click="ChangeSyntax" tag="gsc" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
+		<button label="&amp;AS2" click="ChangeSyntax" tag="as2" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
+...
+}}}
+
+
+
+*ScintillaNET.xml*
+
+Add the following line to the file directly above the </includes> tag.
+{{{
+    <include file="$(BaseDir)\Settings\Languages\gsc.xml" />
+}}}
+
+The last lines of the file should now look like this:
+{{{
+...
+    <include file="$(BaseDir)\Settings\Languages\gsc.xml" />
+  </includes>
+</Scintilla>
+}}}
+
+Save the file and close it.
+
+
+=== Compile button ===

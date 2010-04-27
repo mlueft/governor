@@ -13,7 +13,7 @@ First download the file SYNTAX_FLASHDEVELOP.XML from the project page and save i
 
 C:\Dokumente und Einstellungen\`[USER FOLDER]`\Lokale Einstellungen\Anwendungsdaten\FlashDevelop\Settings\Languages\
 
-Now rename it to GSC.xml.
+Now rename it to gvs.xml.
 
 
 *MainMenu.xml*
@@ -22,7 +22,7 @@ To add the gsc syntax to FlashDevelop's syntax menu we have to add the line belo
 
 
 {{{
-<button label="&amp;gsc" click="ChangeSyntax" tag="gsc" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
+<button label="&amp;gvs" click="ChangeSyntax" tag="gvs" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
 }}}
 
 The file should now look like this:
@@ -30,7 +30,7 @@ The file should now look like this:
 {{{
 ...
 	<menu label="Label.Syntax" name="SyntaxMenu">
-		<button label="&amp;gsc" click="ChangeSyntax" tag="gsc" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
+		<button label="&amp;gvs" click="ChangeSyntax" tag="gvs" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
 		<button label="&amp;AS2" click="ChangeSyntax" tag="as2" flags="Enable:IsEditable+Check:IsEditable|IsActiveSyntax" />
 ...
 }}}
@@ -42,13 +42,13 @@ You can now save and close the file.
 
 And finally we have to connect the menu entry with the syntax file we saved in step one. This happens in the file ScintillaNET.xml. Add the following line to the file directly above the {{{</includes>}}} tag.
 {{{
-    <include file="$(BaseDir)\Settings\Languages\gsc.xml" />
+    <include file="$(BaseDir)\Settings\Languages\gvs.xml" />
 }}}
 
 The last lines of the file should now look like this:
 {{{
 ...
-    <include file="$(BaseDir)\Settings\Languages\gsc.xml" />
+    <include file="$(BaseDir)\Settings\Languages\gvs.xml" />
   </includes>
 </Scintilla>
 }}}

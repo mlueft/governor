@@ -69,8 +69,8 @@ FlashDevlop supports pre-Build commands. This are commands called automatically 
 
 Now FlashDevelop tries to call a batch file named "compileGovernor.bat" in the projects root directory everytime you test/export your project. We have to create this file now. 
 
-  1. Create a new file in the root directory of your project and name it "compileGovernor.bat".
-  2. Open this file in a text editor and copy the following content to it.
+  # Create a new file in the root directory of your project and name it "compileGovernor.bat".
+  # Open this file in a text editor and copy the following content to it.
 {{{
 
 rem define the path to the installation folder of governorc here.
@@ -92,7 +92,9 @@ set fileCT=customToken.txt
 %pathGovernor%governorc.exe -if %pathProject%%pathGVS%%fileGVS% -of %pathProject%%pathGVS% -ct %pathProject%%fileCT% -ns gvs -v AS3 -on Governor
 
 }}}
-  3. Correct paths and file names as you need them.
-  4. save the file and close it.
+  # Correct paths and file names as you need them.
+  # save the file and close it.
 
 That's it.
+
+Now your governor script get compiled automatically everytime you export your project.

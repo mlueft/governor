@@ -1,6 +1,6 @@
 = IDE integration =
 
-== FlashDevlop ==
+== FlashDevelop ==
 
 === Syntax highlight ===
 

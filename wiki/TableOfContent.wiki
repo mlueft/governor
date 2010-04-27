@@ -1,6 +1,6 @@
 #summary Sidebar for the wiki.
   * [index Home]
-  * [ideIntegration IDE-Integration]
+  * [ideIntegtration IDE-Integration]
   * [governorScripts Governor script]
     * [governorScripts How to write .gvs files]
     * [referenceIndex reference]

@@ -2,7 +2,7 @@
 
 = Introduction =
 
-A Governor script is the source code of a program running in the script engine. As in other programming languages it is written in a text file( For governor with the extension .gsc which stands for governor scripts). With a compiler the .gsc file gets compiled to byte code. The byte code is executed by the script engine. 
+A Governor script is the source code of a program running in the script engine. As in other programming languages it is written in a text file( For governor with the extension .gvs which stands for governor scripts). With a compiler the .gvs file gets compiled to byte code. The byte code is executed by the script engine. 
 
 = Byte code =
 
@@ -10,7 +10,7 @@ The byte code for governor is actually a static AS3 class containing an array wi
 
 = Governor script =
 
-The .gsc file can contain more than one program. The begining of a program is indecated with a *=* followed by the program name. As explained in the previous section the source is compiled into an array. The program name is used for the index. So there are some rules:
+The .gvs file can contain more than one program. The begining of a program is indecated with a *=* followed by the program name. As explained in the previous section the source is compiled into an array. The program name is used for the index. So there are some rules:
  * the name has to be unique.
  * don't start the name with numbers.
  * prevent white spaces. (leading and tailing white spaces are trimmed.)

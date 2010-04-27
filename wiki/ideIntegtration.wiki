@@ -56,3 +56,15 @@ The last lines of the file should now look like this:
 Save the file and close it.
 
 If FlashDevelop was open while installing the syntax, you have to restart it now.
+
+=== automatic compilation ===
+
+FlashDevlop supports pre-Build commands. This are commands called automatically when you test/compile your project. To make the work with governor more comfortable it's possible to add the compilation of the governer script to the list of pre-Build commands. This way your scripts are always up to date when exporting or testing your project.
+
+  # Open the FlashDevlop project where you want to add the pre-Build command.
+  # open the project properties (Project>>Properties ...).
+  # change to the Build tab.
+  # Copy the following text in the upper text area. {{{$(ProjectDir)/compileGovernor.bat}}}
+  # Click OK to save the changes and close the window.
+
+Now FlashDevelop tries to call a batch file named "compileGovernor.bat" in the projects root directory everytime you test/export your project. 

@@ -2,15 +2,14 @@
 
 = History =
 
-
 2010.12.19
-* bug(s) fixed.
-* example5 added.
-* example4 added.
-* There were some mistakes about the namespace and 
-  file extension of the governor script file. Sometimes
-  it was gsc and sometimes it was gvs. This is cleaned 
-  and now everything is gvs.
+ * bug(s) fixed.
+ * example5 added.
+ * example4 added.
+ * There were some mistakes about the namespace and 
+   file extension of the governor script file. Sometimes
+   it was gsc and sometimes it was gvs. This is cleaned 
+   and now everything is gvs.
 
 2010.03.29
  * Some examples added to source code:
